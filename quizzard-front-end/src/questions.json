@@ -1,0 +1,55 @@
+[
+    {
+        "question": "Which of the following is not a data type recognized by javascript?",
+        "optionA": "Array",
+        "optionB": "Object",
+        "optionC": "Boolean",
+        "optionD": "Matrix",
+        "answer": "Matrix"
+    },
+
+    {
+        "question": "Which HTML <tag> is used to reference Javascript?",
+        "optionA": "JS",
+        "optionB": "Script",
+        "optionC": "Javascript",
+        "optionD": "All of the above",
+        "answer": "Script"
+    },
+
+    {
+        "question": "What is the exec() method used for?",
+        "optionA": "To execute a function",
+        "optionB": "There is no exec() method in javascript",
+        "optionC": "To find a specific character within a string",
+        "optionD": "To reverse an array",
+        "answer": "To find a specific character within a string"
+    },
+
+    {
+        "question": "Which method would you call to return the position of an array?",
+        "optionA": "getIndexof()",
+        "optionB": "return:position",
+        "optionC": "getPosition",
+        "optionD": "math.position",
+        "answer": "getIndexof()"
+    },
+
+    {
+        "question": "Javascript is the sama as Java",
+        "optionA": "True",
+        "optionB": "False",
+        "optionC": "Javascript is java with scripting",
+        "optionD": "Java is javascript without scripting",
+        "answer": "False"
+    },
+
+    {
+        "question": "Which method would you call to find the highest value of x and y?",
+        "optionA": "Math.ceil(x,y)",
+        "optionB": "Math.floor(x,y)",
+        "optionC": "Math.highest(x,y)",
+        "optionD": "Math.max(x,y)",
+        "answer": "Math.max(x,y)"
+    }
+]
