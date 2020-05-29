@@ -41,6 +41,7 @@
         padding: $normal;
         text-align: center;
         transition: 0.3s linear all;
+        margin: 5px;
     }
 
     a.play-button:hover {
@@ -62,7 +63,7 @@
         background-color: darken($red, 10%);
         box-shadow: $shadow;
     }
-    
+
     #signup-button {
         background-color: $blue;
     }

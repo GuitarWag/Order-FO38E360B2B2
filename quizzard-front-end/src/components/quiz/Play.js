@@ -1,16 +1,17 @@
 import React, { Component, Fragment } from 'react';
 import M from 'materialize-css';
+import { get } from 'lodash';
+import { withRouter } from "react-router";
 import classnames from 'classnames';
-import questions from '../../questions.json';
 import isEmpty from '../../utils/is-empty';
 import CheckAuth from "../check-auth";
-
 
 class Play extends Component {
     constructor (props) {
         super(props);
         this.state = {
-            questions,
+            questions: get(props, 'location.state.questions'),
+            name: get(props, 'location.state.name'),
             currentQuestion: {},
             nextQuestion: {},
             previousQuestion: {},
@@ -249,6 +250,7 @@ class Play extends Component {
     render () {
         const {
             currentQuestion,
+            name,
         } = this.state;
         return (
             <Fragment>
@@ -256,7 +258,7 @@ class Play extends Component {
                <title>Quiz Page</title>
 
                 <div className="questions">
-                    <h2>Javascript Quiz</h2>
+                    <h2>{name} Quiz</h2>
 
                     <h5>{currentQuestion.question}</h5>
                     <div className="options-container">
@@ -289,4 +291,4 @@ class Play extends Component {
     }
 }
 
-export default Play;
+export default withRouter(Play);

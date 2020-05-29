@@ -1,6 +1,9 @@
 import React, { Fragment } from 'react';
+import { map } from 'lodash';
 import { Link } from 'react-router-dom';
 import {useAuthContext} from "../contexts/auth";
+
+import QUIZES from '../quizes';
 
 const Home = () => {
     const { user } = useAuthContext();
@@ -13,7 +16,10 @@ const Home = () => {
                     <div className="play-button-container">
                         <ul>
                             {user
-                                ? <li><Link className="play-button" to="/play/quiz">Play</Link></li>
+                                ? map(QUIZES, quiz => <li key={quiz.name}><Link className="play-button" to={{
+                                    pathname: "/play/quiz",
+                                    state: quiz
+                                }}>Play {quiz.name}</Link></li>)
                                 : <li><h4>Please login or register first</h4></li>
                             }
                         </ul>

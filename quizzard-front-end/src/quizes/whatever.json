@@ -1,3 +1,6 @@
+{
+    "name": "Whatever",
+    "questions":
 [
     {
         "question": "Which of the following is not a data type recognized by javascript?",
@@ -53,3 +56,4 @@
         "answer": "Math.max(x,y)"
     }
 ]
+}
